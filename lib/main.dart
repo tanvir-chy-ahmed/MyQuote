@@ -55,7 +55,6 @@ class MainScreen extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          showPerformanceOverlay: true,
           debugShowCheckedModeBanner: false,
           theme: ThemeData(primarySwatch: Colors.blue),
           home: const RootScreen(),
