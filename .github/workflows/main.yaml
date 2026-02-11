@@ -69,6 +69,8 @@ jobs:
 
   # JOB 3: Create GitHub Release (Combines both)
   release:
+    permissions:
+      contents: write # Specific permission for this job
     needs: [build-android, build-ios]
     runs-on: ubuntu-latest
     steps:
